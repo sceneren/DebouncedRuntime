@@ -1,5 +1,5 @@
-# DebouncedPlugin   [![](https://jitpack.io/v/sceneren/DebouncedPlugin.svg)](https://jitpack.io/private#sceneren/DebouncedRuntime)
-# DebouncedRuntime  [![](https://jitpack.io/v/sceneren/DebouncedRuntime.svg)](https://jitpack.io/private#sceneren/DebouncedRuntime)
+# [DebouncedPlugin](https://github.com/sceneren/DebouncedPlugin)   [![](https://jitpack.io/v/sceneren/DebouncedPlugin.svg)](https://jitpack.io/private#sceneren/DebouncedRuntime)
+# [DebouncedRuntime](https://github.com/sceneren/DebouncedRuntime)  [![](https://jitpack.io/v/sceneren/DebouncedRuntime.svg)](https://jitpack.io/private#sceneren/DebouncedRuntime)
 
 
 
