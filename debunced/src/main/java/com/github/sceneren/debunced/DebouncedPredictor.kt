@@ -5,6 +5,16 @@ import java.lang.ref.WeakReference
 import java.util.*
 import java.util.concurrent.TimeUnit
 
+/**
+ *
+ * @Description:    点击事件防抖拦截
+ * @Author:         scene
+ * @CreateDate:     2022/7/7 12:45
+ * @UpdateUser:
+ * @UpdateDate:     2022/7/7 12:45
+ * @UpdateRemark:
+ * @Version:        1.0.0
+ */
 object DebouncedPredictor {
     private const val FROZEN_WINDOW_MILLIS = 700L
 
