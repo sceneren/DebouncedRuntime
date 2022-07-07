@@ -39,8 +39,10 @@ implementation 'com.github.sceneren:DebouncedRuntime:$DebouncedRuntime_version'
     
 ```
 
-##用法
-1、没有需要特殊处理的view可以直接使用
+# 用法
+
+1、没有需要特殊处理的view可以直接使用,不需要任何操作
+
 2、有需要可以连续点击的使用```@UncheckViewOnClick```标记
 
 
