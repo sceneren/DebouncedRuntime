@@ -29,7 +29,7 @@ classpath "com.github.sceneren:DebouncedPlugin:$DebouncedPlugin_version"
 ## app的build.grade 添加plugin
 ```
 
-apply plugin: 'Debounced'
+apply plugin:'com.github.sceneren.debounced'
 
 ```
 ## app的build.grade 添加依赖
