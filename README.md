@@ -6,7 +6,6 @@
 ## 功能列表
 
 -基于ASM Transform Android 点击事件防抖处理
--Grade 8.0 后会移除 Transform
 
 # 开始
 
