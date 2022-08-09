@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
  * @Version:        1.0.0
  */
 object DebouncedPredictor {
-    private const val FROZEN_WINDOW_MILLIS = 700L
+    private const val FROZEN_WINDOW_MILLIS = 300L
 
     private val viewWeakHashMap: MutableMap<View, FrozenView> = WeakHashMap()
 

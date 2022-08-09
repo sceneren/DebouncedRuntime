@@ -26,9 +26,20 @@
         android:text="kotlin_lambda" />
 
     <Button
+        android:id="@+id/btn_kotlin_no_lambda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kotlin_no_lambda" />
+
+    <Button
         android:id="@+id/btn_no_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="no_check" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
