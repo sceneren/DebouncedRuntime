@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-apply plugin:"com.github.sceneren.debounced"
+apply plugin:'com.github.sceneren.debounced'
 
 android {
     compileSdk 32
