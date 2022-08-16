@@ -1,5 +1,6 @@
-package com.github.sceneren.debunced
+package com.github.sceneren.debounced
 
+import android.util.Log
 import android.view.View
 import java.lang.ref.WeakReference
 import java.util.*
@@ -15,13 +16,14 @@ import java.util.concurrent.TimeUnit
  * @UpdateRemark:
  * @Version:        1.0.0
  */
-object DebouncedPredictor {
-    private const val FROZEN_WINDOW_MILLIS = 300L
+object TestClickUtils {
+    private const val FROZEN_WINDOW_MILLIS = 1000L
 
     private val viewWeakHashMap: MutableMap<View, FrozenView> = WeakHashMap()
 
     @JvmStatic
-    fun shouldDoClick(targetView: View): Boolean {
+    fun testShouldDoClick(targetView: View): Boolean {
+        Log.e("testShouldDoClick", "testShouldDoClick")
         var frozenView = viewWeakHashMap[targetView]
         val now = now()
         if (frozenView == null) {

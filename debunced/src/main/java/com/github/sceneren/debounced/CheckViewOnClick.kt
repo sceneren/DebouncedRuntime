@@ -1,4 +1,4 @@
-package com.github.sceneren.debunced
+package com.github.sceneren.debounced
 
 /**
  * @Author: leavesCZY

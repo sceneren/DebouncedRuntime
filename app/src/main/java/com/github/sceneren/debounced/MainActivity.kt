@@ -5,7 +5,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.sceneren.debounced.databinding.ActivityMainBinding
-import com.github.sceneren.debunced.UncheckViewOnClick
 
 class MainActivity : AppCompatActivity() {
     private var count = 0

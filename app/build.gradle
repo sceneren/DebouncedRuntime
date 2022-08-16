@@ -5,6 +5,11 @@ plugins {
 
 apply plugin:'com.github.sceneren.debounced'
 
+DebouncedExt{
+    className = "com.github.sceneren.debounced.TestClickUtils"
+    methodName = "testShouldDoClick"
+}
+
 android {
     compileSdk 32
 
@@ -13,7 +18,7 @@ android {
         minSdk 23
         targetSdk 32
         versionCode 1
-        versionName "2.0.2"
+        versionName "2.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
