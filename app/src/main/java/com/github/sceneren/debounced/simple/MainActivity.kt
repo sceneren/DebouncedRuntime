@@ -1,10 +1,13 @@
-package com.github.sceneren.debounced
+package com.github.sceneren.debounced.simple
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.sceneren.debounced.databinding.ActivityMainBinding
+import com.github.sceneren.debounced.UncheckViewOnClick
+import com.github.sceneren.debounced.simple.databinding.ActivityMainBinding
+import com.github.sceneren.module.TestActivity
 
 class MainActivity : AppCompatActivity() {
     private var count = 0
@@ -17,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnKotlinLambda.setOnClickListener {
             count += 1
             binding.tvText.text = "点击次数：${count}"
+        }
+
+        binding.btnEnterTest.setOnClickListener {
+            startActivity(Intent(this@MainActivity, TestActivity::class.java))
         }
 
         binding.btnKotlinNoLambda.setOnClickListener(object : View.OnClickListener {

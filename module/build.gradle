@@ -1,25 +1,22 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'com.github.sceneren.debounced'
 }
-
 DebouncedExt {
     className = "com.github.sceneren.module.DebouncedPredictor2"
     methodName = "shouldDoClick"
 }
 
 android {
+    namespace 'com.github.sceneren.module'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.github.sceneren.debounced.simple"
         minSdk 23
         targetSdk 33
-        versionCode 1
-        versionName "2.0.4"
 
-        multiDexEnabled true
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -35,21 +32,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
 
-    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7'
-    implementation 'androidx.recyclerview:recyclerview:1.3.0'
 
-    implementation project(":module")
-    implementation project(":debunced")
+    api project(":debunced")
 }

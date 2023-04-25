@@ -1,4 +1,4 @@
-package com.github.sceneren.debounced
+package com.github.sceneren.debounced.simple
 
 import android.util.Log
 import android.view.View

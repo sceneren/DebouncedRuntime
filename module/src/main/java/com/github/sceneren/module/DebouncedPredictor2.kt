@@ -1,4 +1,4 @@
-package com.github.sceneren.debounced
+package com.github.sceneren.module
 
 import android.util.Log
 import android.view.View
@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
  * @UpdateRemark:
  * @Version:        1.0.0
  */
-object DebouncedPredictor {
+object DebouncedPredictor2 {
     private const val FROZEN_WINDOW_MILLIS = 500L
 
     private val viewWeakHashMap: MutableMap<View, FrozenView> = WeakHashMap()
